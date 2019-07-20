@@ -24,4 +24,11 @@ var_dump($jwt);*/
 
 var_dump(JWT::decode($token_generated, $key, array('HS256')));*/
 
-var_dump(new Auth());
+/*echo Auth::SignIn([
+    'id' => 1,
+    'name' => 'Eduardo'
+]);*/
+
+var_dump(Auth::GetData('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjM1OTU4OTAsImF1ZCI6IjJkNjRmMDVmZDYyZjEzMGVlZGMyYTE4MTRhZTEwNGE5ODlkNDFmYTgiLCJkYXRhIjp7ImlkIjoxLCJuYW1lIjoiRWR1YXJkbyJ9fQ.kPpX_6PVAXn_cW0d_hzDHmTRu45caT34s2mmHXO-wMM'));
+
+//var_dump(new Auth());
